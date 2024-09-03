@@ -4,7 +4,7 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: grey; /* Cor de fundo da página */
+    background-color: black; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -105,7 +105,7 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: black; /* Cor de fundo do rodapé */
+    background-color: #45474B; /* Cor de fundo do rodapé */
     color: #45474B; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
@@ -171,3 +171,11 @@ footer {
     text-align: center;
     border-style: ridge;
 }
+
+.despesas {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 100px;
+    content: ''; /* Remove o texto */
+  }
