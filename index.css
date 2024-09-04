@@ -12,6 +12,7 @@ body {
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    color: white;
 }
 
 /* Estiliza os títulos h1 */
@@ -20,6 +21,8 @@ h1 {
     color: #222831; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    color: white;
+    background-color: rgba(255, 0, 0, 0.315);
 }
 
 /* Estiliza as seções da página */
@@ -67,6 +70,7 @@ section button:hover {
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    color: white;
 }
 
 /* Estiliza cada item de resultado */
@@ -101,12 +105,13 @@ section button:hover {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
     text-decoration: none;
+    color: white;
 }
 
 /* Estiliza o rodapé da página */
 footer {
     background-color: #45474B; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    color: white;
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
@@ -183,3 +188,12 @@ footer {
         border-color: blue; 
     }
   
+.dev{
+    color: palegreen;
+}
+
+.Nossas{
+    color: teal;
+    text-align: center;
+ 
+}
