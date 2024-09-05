@@ -80,6 +80,7 @@ section button:hover {
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -178,22 +179,39 @@ footer {
 }
 
 .Despesas {
-        background-color: blue;
         color: white;
         border-radius: 20px;
     }
     
     .Despesas:hover{
-        background-color: rebeccapurple;
-        border-color: blue; 
+        background-color: blueviolet;
+        border-style: solid;
     }
   
 .dev{
     color: palegreen;
 }
 
-.Nossas{
-    color: teal;
-    text-align: center;
- 
+
+.Pesquisar {
+    background-color:  rgba(255, 0, 0, 0.315);
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 30px; /* Ajuste a altura conforme necessário */
+    padding: 10px; /* Espaço interno da caixa */
+    font-size: 15px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda as bordas */
 }
+
+
+.button {
+    color: white;
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: brown;
+    border-color: blue; 
+}
+
