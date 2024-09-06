@@ -218,3 +218,52 @@ footer {
     background-color: brown;
     border-color: blue;
     }
+
+    /* ... (código original) ... */
+
+/* Adicionando mais flexibilidade com grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Utilizando unidades relativas */
+  body {
+    font-size: 16px; /* Tamanho de fonte base */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Equivale a 40px com font-size base 16px */
+  }
+  
+  /* Media queries mais específicas */
+  @media (max-width: 1200px) {
+    /* Estilos para telas maiores que tablets */
+  }
+  
+  @media (max-width: 768px) {
+    /* Estilos para tablets */
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para smartphones */
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Efeito de toque */
+  button:active,
+  a:active {
+    transform: scale(0.95);
+  }
+  
+  /* Imagens responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
