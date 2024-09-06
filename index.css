@@ -12,7 +12,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    color: white;
+    color: red;
     background-image: url(fundo.jpg);
     background-size: cover;
     background-position: center;
@@ -85,6 +85,7 @@ section button:hover {
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center;
+    color: red;
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
