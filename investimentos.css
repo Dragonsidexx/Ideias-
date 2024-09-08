@@ -1,0 +1,194 @@
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-color: black; /* Cor de fundo da página */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+
+.checkbox-container {
+    display: flex; 
+    justify-content: space-between; 
+    text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+  .checkbox1{
+  width: 40x;
+  height: 40px;
+
+  }
+
+  .checkbox2{
+    width: 40x;
+    height: 40px;
+
+  }
+
+  .checkbox3 {
+    width: 40x;
+    height: 40px;
+
+  }
+
+
+  .h1 {
+    color: red;
+    display: flex; /* Transforma o elemento em um container flexbox */
+    justify-content: center; /* Centraliza os itens na direção principal (linha) */
+    align-items: center; /* Centraliza os itens na direção cruzada (coluna) */
+    background-color: #061224;
+  }
+
+.h2{
+    color: aqua;
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+
+}
+
+.title{
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+
+}
+
+.resultados-pesquisa {
+    height: 80vh; /* 80% da altura da viewport */
+    
+  
+    @media (max-width: 768px) {
+      height: 60vh;
+    }
+  }
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center;
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: none;
+    color: blue; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+    text-decoration: none;
+    color: white;
+}
+
+.botão{
+background-color: black;
+border-radius: 15px;
+color: red;
+text-align: center;
+display: flexbox;
+align-items: center;
+align-self: center;
+
+}
+
+.botão:hover{
+  background-color: rebeccapurple;
+  border-color: blue; 
+}
+
+.investimentos{
+    color: red;
+   background-color: black;
+   border-radius: 15px;
+   width: 50px;
+   height: 35px;
+   
+}
+
+.paginicial{
+  color: red;
+  background-color: #061224;
+}
+
+/* ... (código original) ... */
+
+/* Adicionando mais flexibilidade com grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Utilizando unidades relativas */
+body {
+  font-size: 16px; /* Tamanho de fonte base */
+}
+
+h1 {
+  font-size: 2.5rem; /* Equivale a 40px com font-size base 16px */
+}
+
+/* Media queries mais específicas */
+@media (max-width: 1200px) {
+  /* Estilos para telas maiores que tablets */
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para tablets */
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .checkbox-container {
+    flex-direction: column; /* Empilha os checkboxes em telas menores */
+  }
+  .botão, .investimentos {
+    width: 100%; /* Ocupa toda a largura da tela */
+    margin: 10px auto; /* Centraliza horizontalmente */
+  }
+  .item-resultado {
+    font-size: 0.9em; /* Reduz o tamanho da fonte */
+  }
+  .resultados-pesquisaa {
+    height: auto; /* Permite que a altura se ajuste automaticamente */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Estilos para smartphones */
+  body {
+    font-size: 14px;
+  }
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .resultados-pesquisa {
+    height: 60vh;
+  }
+  /* ... outros ajustes para telas menores ... */
+}
